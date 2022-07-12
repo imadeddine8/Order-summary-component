@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url("images/pattern-background-desktop.svg");
+    font-family: 'Red Hat Display', sans-serif;
+}
+/* The Container of Content */
+.card{
+    width: 440px;
+    height: 600px;
+    background-color: white;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 15px;
+}
+/* Image */
+.image{
+    background: url("images/illustration-hero.svg");
+    width: 440px;
+    height: 220px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+/* Title */
+.card h2{
+    margin-top: 2rem; 
+    text-align: center;
+    color: hsl(223, 47%, 23%);
+}
+/* Paragraph */
+.card p{
+    margin: 16px 70px 0 60px;
+    font-size: 16px;
+    color: hsl(224, 23%, 55%);
+    text-align: center;
+}
+/* Rectangle */
+.card .paid{
+    width: 360px;
+    height: 100px;
+    background-color: hsl(225, 100%, 98%);
+    margin: 2rem 0 0 40px;
+    border-radius: 10px;
+}
+.card .paid img{
+    position: relative;
+    left: 20px;
+    top: 25px;
+}
+.card .paid .name{
+    color: hsl(223, 47%, 23%);
+    position: relative;
+    left: 90px;
+    bottom: 30px;
+    font-weight: 800;
+}
+.card .paid .number{
+    position: relative;
+    left: 90px;
+    bottom: 20px;
+    color: hsl(224, 23%, 55%);
+}
+.card .paid a{
+    position: relative;
+    left: 280px;
+    bottom: 55px;
+    color: hsl(245, 75%, 52%);
+}
+/* Button */
+button{
+    width: 360px;
+    height: 40px;
+    margin: 1.5rem 0 0 40px;
+    border: none;
+    border-radius: 7px;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 5px 1px hsla(224, 23%, 55%, 0.6);
+}
+/* The bottom */
+.cancel{
+    color: hsl(224, 23%, 55%);
+    margin-left: 190px;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 12px;
+}
+/* Active Mode */
+.card .paid a:active{
+    cursor: pointer;
+    color: hsl(245, 75%, 52%);
+    opacity: 0.8;
+    text-decoration: none;
+}
+button:active{
+    cursor: pointer;
+    color: white;
+    background: hsl(245, 75%, 52%);
+    opacity: 0.7;
+}
+.cancel:active{
+    cursor: pointer;
+    color: black;
+}
